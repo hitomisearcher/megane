@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히토미 검색기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>히토미 검색기</h1>
+
+        <div class="input-section">
+            <label for="hitomiNumber">번호 검색:</label>
+            <input type="text" id="hitomiNumber" placeholder="번호 입력 (예: 1234567)">
+            <button onclick="goToHitomi()">번호 검색</button>
+        </div>
+
+        <div class="button-section">
+            <button onclick="randomSearch()">랜덤 검색</button>
+        </div>
+
+        <div class="latest-section">
+            <h2>🆕 최신 작품 보기</h2>
+            <button onclick="location.href='https://hitomi.la/search.html?language%3Akorean'">최신순</button>
+        </div>
+
+        <div class="popular-section">
+            <h2>🔥 인기 작품 보기</h2>
+            <div class="popular-buttons">
+                <button onclick="location.href='https://hitomi.la/popular/today-korean.html'">일간 인기</button>
+                <button onclick="location.href='https://hitomi.la/popular/week-korean.html'">주간 인기</button>
+                <button onclick="location.href='https://hitomi.la/popular/month-korean.html'">월간 인기</button>
+                <button onclick="location.href='https://hitomi.la/popular/year-korean.html'">연간 인기</button>
+            </div>
+        </div>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
